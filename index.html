@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Todos</h1>
+    <p>Click on a Todo item to toggle completed<br>
+        Click the X button to remove a Todo item</p>
+    <form>
+        <label for="newTodo">New Todo</label>
+        <input type="text" id="newTodo" placeholder="enter new todo" autofocus>
+        <button>Add Todo</button>
+    </form>
+    <ul id='todos'></ul>
+
+    <script src="app-storage.js"></script>
+</body>
+
+</html>
