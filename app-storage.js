@@ -19,7 +19,7 @@ for (let todo of todoList) {
 }
 
 // Handle input form
-form.addEventListener('submit', function(e) {
+form.addEventListener('submit', e => {
 	e.preventDefault();
 	const todo = document.querySelector('#newTodo');
 	const newTodo = document.createElement('li');
@@ -44,7 +44,7 @@ form.addEventListener('submit', function(e) {
 });
 
 // Handle item deletion
-todoEls.addEventListener('click', function(e) {
+todoEls.addEventListener('click', e => {
 	if (e.target.tagName === 'BUTTON') {
 		let newTodos = todoList.filter(
 			todo => todo.id !== parseInt(e.target.parentElement.id)

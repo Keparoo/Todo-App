@@ -2,7 +2,7 @@ const form = document.querySelector('form');
 const todoEls = document.querySelector('#todos');
 
 // Handle input form
-form.addEventListener('submit', function(e) {
+form.addEventListener('submit', e => {
 	e.preventDefault();
 	const todo = document.querySelector('#newTodo');
 	const newTodo = document.createElement('li');
@@ -19,7 +19,7 @@ form.addEventListener('submit', function(e) {
 });
 
 // Handle marking items complete and item deletion
-todoEls.addEventListener('click', function(e) {
+todoEls.addEventListener('click', e => {
 	if (e.target.tagName === 'BUTTON') {
 		e.target.parentElement.remove();
 	}
